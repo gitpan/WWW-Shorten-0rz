@@ -1,5 +1,5 @@
 name: WWW-Shorten-0rz
-version: 0.01
+version: 0.02
 abstract: 1
 author: Kang-min Liu <gugod@gugod.org>
 license: perl
@@ -7,7 +7,7 @@ distribution_type: module
 build_requires:
   Test::More: 0
 requires:
-  Spiffy: 0
+  WWW::Shorten: 0
 no_index:
   directory:
     - inc

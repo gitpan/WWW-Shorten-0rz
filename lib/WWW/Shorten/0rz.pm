@@ -2,7 +2,7 @@ package WWW::Shorten::0rz;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
