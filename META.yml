@@ -1,14 +1,16 @@
-name: WWW-Shorten-0rz
-version: 0.02
-abstract: 1
-author: Kang-min Liu <gugod@gugod.org>
-license: perl
-distribution_type: module
-build_requires:
+abstract: Shorten URL using 0rz.net
+author: Kang-min Liu <gugod@gugod.org>.
+build_requires: 
   Test::More: 0
-requires:
-  WWW::Shorten: 0
-no_index:
-  directory:
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: perl
+name: WWW-Shorten-0rz
+no_index: 
+  directory: 
     - inc
-generated_by: Module::Install version 0.36
+    - t
+requires: 
+  WWW::Mechanize: 0
+  WWW::Shorten: 0
+version: 0.03
