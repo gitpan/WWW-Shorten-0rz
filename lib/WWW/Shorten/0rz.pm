@@ -2,7 +2,7 @@ package WWW::Shorten::0rz;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
@@ -11,9 +11,9 @@ use WWW::Mechanize;
 sub makeashorterlink {
     my $url = shift;
     my $ua = new WWW::Mechanize;
-    $ua->get('http://0rz.net');
+    $ua->get('http://0rz.tw');
     $ua->submit_form(fields => { url => $url });
-    croak $ua->content unless $ua->find_link( url_regex => qr/http:\/\/0rz.net/i );
+    croak $ua->content unless $ua->find_link( url_regex => qr/http:\/\/0rz.tw/i );
     return $ua->field('xxurl');
 }
 
@@ -21,7 +21,7 @@ sub makealongerlink {
     my $tinyurl_url = shift
 	or croak 'No TinyURL key / URL passed to makealongerlink';
     my $ua = __PACKAGE__->ua();
-    $tinyurl_url = "http://0rz.com/$tinyurl_url"
+    $tinyurl_url = "http://0rz.tw/$tinyurl_url"
         unless $tinyurl_url =~ m!^http://!i;
     my $resp = $ua->get($tinyurl_url);
     return undef unless $resp->is_redirect;
@@ -35,7 +35,7 @@ __END__
 
 =head1 NAME
 
-WWW::Shorten::0rz - Shorten URL using 0rz.net
+WWW::Shorten::0rz - Shorten URL using 0rz.tw
 
 =head1 DESCRIPTION
 
