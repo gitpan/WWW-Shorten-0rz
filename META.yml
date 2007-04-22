@@ -1,5 +1,5 @@
 abstract: Shorten URL using 0rz.tw
-author: Kang-min Liu <gugod@gugod.org>.
+author: -2007 by Kang-min Liu <gugod@gugod.org>.
 build_requires: 
   Test::More: 0
 distribution_type: module
@@ -13,4 +13,4 @@ no_index:
 requires: 
   WWW::Mechanize: 0
   WWW::Shorten: 0
-version: 0.04
+version: 0.05

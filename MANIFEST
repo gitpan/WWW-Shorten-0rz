@@ -15,3 +15,5 @@ README
 t/00.use.t
 t/01.shorter.t
 t/02.short_already.t
+t/pod-coverage.t
+t/pod.t
