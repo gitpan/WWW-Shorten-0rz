@@ -1,16 +1,23 @@
-abstract: Shorten URL using 0rz.tw
-author: -2007 by Kang-min Liu <gugod@gugod.org>.
-build_requires: 
+---
+abstract: 'Shorten URL using 0rz.tw'
+author:
+  - '-2007 by Kang-min Liu <gugod@gugod.org>.'
+build_requires:
   Test::More: 0
 distribution_type: module
-generated_by: Module::Install version 0.64
+generated_by: 'Module::Install version 0.77'
 license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: WWW-Shorten-0rz
-no_index: 
-  directory: 
+no_index:
+  directory:
     - inc
     - t
-requires: 
+requires:
   WWW::Mechanize: 0
   WWW::Shorten: 0
-version: 0.05
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.06

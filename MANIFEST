@@ -1,5 +1,7 @@
+.shipit
 Changes
 inc/Module/Install.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -15,5 +17,5 @@ README
 t/00.use.t
 t/01.shorter.t
 t/02.short_already.t
-t/pod-coverage.t
-t/pod.t
+xt/pod-coverage.t
+xt/pod.t
