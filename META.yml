@@ -1,7 +1,7 @@
 ---
 abstract: 'Shorten URL using 0rz.tw'
 author:
-  - '-2007 by Kang-min Liu <gugod@gugod.org>.'
+  - '-2009 by Kang-min Liu <gugod@gugod.org>.'
 build_requires:
   Test::More: 0
 distribution_type: module
@@ -20,4 +20,4 @@ requires:
   WWW::Shorten: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.06
+version: 0.07
